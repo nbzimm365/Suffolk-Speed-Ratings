@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Noah
+ */
+import javax.swing.*;
+import java.text.*;
+
+public class Main {
+
+ public static void main(String[] args) {
+
+  JOptionPane.showMessageDialog(null, "In this program, you will be prompted for: your grade, your time," + " and then you will be given your speed rating.");
+
+  int userTime = Integer.parseInt(JOptionPane.showInputDialog("Please enter your time in second." +
+   " If you need a time converter, check my 'Converter' page of my website."));
+
+  int courseCorrection = 0; //Initializes the course correction factor variable
+  
+     int firstPlace = //FIRSTPLACEPERSON(INPUT AFTER RACE)
+     int secondPlace = //SECONDPLACEPERSON(INPUT AFTER RACE)
+     int thirdPlace = //THIRDPLACEPERSON(INPUT AFTER RACE)
+
+     double averageTimeFR = (firstPlace + secondPlace + thirdPlace) / 3;
+
+  int standardTime = //FIGURE OUT AVERAGE FOR RACE
+
+  courseCorrection = standardTime - averageTime;
+
+  int speedRating = (1560 - userTime - courseCorrection) / 3;
+
+  JOptionPane.showMessageDialog("Your speed rating was: " + speedRating + ", congratulations.");
+
+ }
+}
